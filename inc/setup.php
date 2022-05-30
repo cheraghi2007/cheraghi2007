@@ -34,23 +34,3 @@ if ( ! function_exists( '_s_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', '_s_setup' );
-
-
-
-/**
- * SVG Upload
- */
-
-/*add_filter( 'upload_mimes', function() {
-  $mimes['svg'] = ['image/svg+xml'];
-  $mimes['mp4']  = ['video/mp4','video/mpeg'];
-  $mimes['m4v']  = ['video/x-m4v'];
-  $mimes['mov']  = ['video/quicktime'];
-  $mimes['wmv']  = ['video/x-ms-asf','video/x-ms-wmv'];
-  $mimes['avi']  = ['application/x-troff-msvideo','video/avi','video/msvideo','video/x-msvideo'];
-  $mimes['mpg']  = ['audio/mpeg','video/mpeg'];
-  $mimes['png']  = ['image/png'];
-  $mimes['jpg']  = ['image/jpeg','image/pjpeg'];
-  $mimes['pdf']  = ['application/pdf'];
-  return $mimes;
-});*/

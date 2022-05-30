@@ -57,7 +57,9 @@ if (!function_exists('wpex_mce_text_sizes')) {
 add_filter('tiny_mce_before_init', 'wpex_mce_text_sizes');
 
 
-// Remove Location Slug
+
+
+// Remove Slug
 function location_remove_slug($post_link, $post, $leavename)
 {
 
@@ -99,6 +101,9 @@ function na_parse_request($query)
 	}
 }
 add_action('pre_get_posts', 'na_parse_request');
+
+
+
 
 /**
  * LANG Item
@@ -176,7 +181,9 @@ if (!function_exists('understrap_pagination')) {
 }
 
 
-
+/**
+ * reading_time
+ */
 function reading_time()
 {
 	$content = get_the_content(get_the_id());

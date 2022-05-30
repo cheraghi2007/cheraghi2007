@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main id="site-main"> 
     <div id="container-block" class="mainContainer  container-fluid regular_heights p-0">
-        <div class="searchzoom" style="background-image:url('<?php echo THEME_DIR_URI; ?>/src/images/design/Agapi_boating_serach-scaled-uai.jpg');">
+        <div class="searchzoom" style="background-image:url('<?php echo THEME_DIR_URI; ?>/src/images/design/test.jpg');">
             <h1><?php  printf( esc_html__( 'Results For: %s', '_s' ),'<span class="search-word">' . get_search_query() . '</span>'); ?></h1>
         </div>
     </div>

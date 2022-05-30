@@ -29,15 +29,6 @@ add_action('wp_footer', function () {
 	wp_dequeue_script('wp-embed');
 });
 
-//add meta to wp_head
-function add_meta_to_head()
-{
-?>
-	<meta name="facebook-domain-verification" content="a3qwm6sspe5r10o6digbkimjvjp8zp" />
-<?php
-}
-add_action('wp_head', 'add_meta_to_head');
-
 
 
 

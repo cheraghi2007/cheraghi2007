@@ -117,16 +117,6 @@ $(function() {
 
     ****************************************************/
 
-    /*$.fn.isInViewport = function() {
-        var elementTop = $(this).offset().top;
-        var elementBottom = elementTop + $(this).outerHeight();
-
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    };*/
-
     $(window).scroll(function() {
         var st = $(this).scrollTop() / 60;
         $(".full_heights.parallax .bgZoom").css({
@@ -146,8 +136,6 @@ $(function() {
                 "transform": "translate3d(0px, -" + st2 + "%, .01px)",
                 "-webkit-transform": "translate3d(0px, -" + st2 + "%, .01px)"
             });
-        } else {
-            // do something else
         }
     });
 
@@ -172,18 +160,14 @@ $(function() {
     $(function() {
 
         // CONFIG
-        let visibilityIds = ['#counters_1', '#counters_2', '#counters_3', '#counters_hero']; //must be an array, could have only one element
+        let visibilityIds = ['#counters_1', '#counters_2', '#counters_3', '#counters_hero'];
         let counterClass = '.counter';
-        let defaultSpeed = 3000; //default value
+        let defaultSpeed = 3000;
 
-        // END CONFIG
-
-        //init if it becomes visible by scrolling
         $(window).on('scroll', function() {
             getVisibilityStatus();
         });
 
-        //init if it's visible by page loading
         getVisibilityStatus();
 
         function getVisibilityStatus() {
@@ -191,8 +175,8 @@ $(function() {
             var windowHeight = $(window).height(),
                 windowScrollValFromTop = $(this).scrollTop();
 
-            visibilityIds.forEach(function(item, index) { //Call each class
-                try { //avoid error if class not exist
+            visibilityIds.forEach(function(item, index) { 
+                try { 
                     elValFromTop[index] = Math.ceil($(item).offset().top);
                 } catch (err) {
                     return;
@@ -269,8 +253,6 @@ $(function() {
         if (Math.abs(lastScrollTop - st) <= delta)
             return;
 
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight) {
             // Scroll Down
             $('header').removeClass('nav-down').addClass('nav-up');
