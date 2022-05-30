@@ -1,0 +1,40 @@
+.error404 .full-vh{
+  height: 100vh!important;
+}
+.error404 .full-vh-calculated{
+  height: calc(100vh - 112px);
+  margin-top: 112px;
+}
+.error404 .mainContainer.full-vh .bgZoom{
+  height: 100vh;
+}
+.error404 .font-20{
+  font-size: 20px;
+}
+.error404 .not-found-title{
+  font-size: 56px!important;
+  margin-top: 2.25rem;
+  font-weight: bold;
+}
+.error404 .divider-wrapper{
+  width: 100%;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+.error404 .divider-wrapper hr{
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.error404 .gray-button a{
+  width: 205px;
+  height: 43px;
+  white-space: nowrap
+}
+.error404 .gray-button a:hover{
+  background-color: transparent!important;
+  border-color: #cb1b13 !important;
+  color: #e6e6e6 !important;
+}
+.error404 .back-to-main{
+  font-size: .8rem;
+  padding-right: 9px;
+}

@@ -1,0 +1,134 @@
+.club-glance {
+    .club-glance-wrapper {
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem 3rem;
+            .box {
+                max-width: 128px;
+                margin: 0 auto;
+                .box-content {
+                    .main-title-glance {
+                        font-size: 0.75rem;
+                        margin-bottom: 0;
+                        line-height: 1.125rem;
+                        margin-top: 0.375rem;
+                        font-family: 'Inter';
+                        color: $mainTitleColor;
+                        font-weight: 700;
+                    }
+                    .box-description {
+                        font-size: 12px;
+                        line-height: 1.5;
+                    }
+                }
+                @media screen and (max-width: $sm) {
+                    max-width: 100%;
+                    padding: 0;
+                }
+                @media screen and (max-width: $md) and (min-width:$sm) {
+                    max-width: 100%;
+                    padding: 0;
+                }
+            }
+            &._5box {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            &._4box {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            &._3box {
+                grid-template-columns: repeat(3, 1fr);
+                .box {
+                    max-width: fit-content;
+                    .box-content {
+                        .main-title-glance {
+                            font-size: 20px;
+                            margin-bottom: 0;
+                            line-height: 1.125rem;
+                            margin-top: 0.375rem;
+                            font-family: 'Inter';
+                            color: $buttonBg;
+                            font-weight: 600;
+                            margin-bottom: 36px;
+                        }
+                        .box-description {
+                            font-size: 15px;
+                            line-height: 1.5;
+                            margin-bottom: 36px;
+                        }
+                    }
+                }
+                @media screen and (max-width: $sm) {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 36px 1rem;
+                }
+            }
+            &._2box {
+                grid-template-columns: repeat(2, 1fr);
+                .box {
+                    max-width: fit-content;
+                    .box-content {
+                        .main-title-glance {
+                            font-size: 20px;
+                            margin-bottom: 0;
+                            line-height: 1.125rem;
+                            margin-top: 0.375rem;
+                            font-family: 'Inter';
+                            color: $buttonBg;
+                            font-weight: 600;
+                            margin-bottom: 36px;
+                        }
+                        .box-description {
+                            font-size: 15px;
+                            line-height: 1.5;
+                            margin-bottom: 36px;
+                        }
+                    }
+                }
+                @media screen and (max-width: $sm) {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 36px 1rem;
+                }
+            }
+            &._1box {
+                grid-template-columns: repeat(1, 1fr);
+                .box {
+                    max-width: fit-content;
+                    .box-content {
+                        .main-title-glance {
+                            font-size: 20px;
+                            margin-bottom: 0;
+                            line-height: 1.125rem;
+                            margin-top: 0.375rem;
+                            font-family: 'Inter';
+                            color: $buttonBg;
+                            font-weight: 600;
+                            margin-bottom: 36px;
+                        }
+                        .box-description {
+                            font-size: 15px;
+                            line-height: 1.5;
+                            margin-bottom: 36px;
+                        }
+                    }
+                }
+                @media screen and (max-width: $sm) {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 36px 1rem;
+                }
+            }
+            @media screen and (max-width: $sm) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 36px 1rem;
+            }
+            @media screen and (max-width: $md) and (min-width:$sm) {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 36px 1rem;
+            }
+        }
+    }
+    @media screen and (max-width: $xl) {
+        padding-bottom: 4.5rem!important;
+    }
+}

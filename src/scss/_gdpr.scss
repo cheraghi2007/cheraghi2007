@@ -1,0 +1,49 @@
+body #cookie-notice{
+    background-color: rgba(0, 0, 0, 0.3)!important;
+    color: white !important;
+    z-index: 999;
+    .cookie-notice-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        z-index: 998;
+        @media screen and (max-width:$xs) {
+            flex-direction: column;
+        }
+        span{
+            margin: 0;
+        }
+        .cn-buttons-container{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        #cn-accept-cookie{
+            background-color: #eee2db !important;
+            color: black !important;
+            font-weight: 400 !important;
+            height: 40px;
+            width: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            margin: 5px;
+            &:hover{
+                background-color: transparent!important;
+            }
+        }
+        #cn-more-info{
+            background-color: transparent !important;
+            color: white !important;
+            font-weight: 600 !important;
+            height: 40px;
+            width: 128px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            margin: 5px;
+        }
+    }
+}

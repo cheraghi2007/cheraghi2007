@@ -1,0 +1,125 @@
+.searchzoom{
+    min-height: 70vh;
+    position: relative;
+    background-size:cover;
+    &:after{
+        content: '';
+        position: absolute;
+        opacity: 0.26;
+        background-color: #fff;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+    h1{
+        position: absolute;
+        top: 80px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        font-size: 45px;
+        color: #101213;
+        font-family: 'Inter';
+        font-weight: 600;
+        letter-spacing: -0.05em;
+        span{
+            display: inline-block;
+            margin-left: 10px;
+            &::first-letter {
+                text-transform: uppercase;
+              }
+        }
+        @media screen and (max-width:$md) {
+            font-size: 28px;
+        }
+    }
+}
+
+.search-content{
+    max-width: 1128px;
+    margin: 0 auto;
+    .content-wrapper{
+        padding-top: 36px;
+        margin-top: 36px;
+        span{
+            display: block;
+            font-weight: 600;
+            font-size: 12px;
+            font-family: 'Roboto';
+            color: #303133;
+        }
+        h3{
+            margin: 9px 0px 0px 0px;
+            color: #303133;
+            font-size: 20px;
+            font-family: 'Roboto';
+            letter-spacing: -0.02em;
+            font-weight: 700;
+        }
+        p{
+            margin: 9px 0px 0px 0px;
+            color: #777777;
+            font-size: 15px;
+            font-weight: 400;
+        font-family: 'Roboto';
+        }
+    }
+}
+
+.paginations{
+    background-color: #f7f7f7;
+    margin-top: 72px;
+    nav{
+        max-width: 1128px;
+        margin: 0 auto;
+        .pagination{
+            justify-content: center;
+            width: 100%;
+            margin: 0;
+            padding: 37px 0;
+            position: relative;
+            .page-item {
+                .page-link{
+                    display: block;
+                    width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    margin: 0;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: 500;
+                    padding: 0;
+                    text-align: center;
+                    border: none;
+                    color: #3f0a0c;
+                    background-color: transparent;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    &.next{
+                        position: absolute;
+                        right: 0;
+                    }
+                    &.prev{
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                &.active{
+                    .page-link{
+                        background-color: #eeeeee;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.become-club-member {
+    position: relative;
+    overflow: hidden;
+    .become-club-member-wrapper {
+        position: relative;
+        z-index: 99;
+        .content {
+            h1 {
+                overflow: hidden;
+                font-size: 44px;
+                color: #fff;
+                @media screen and (max-width: $md) {
+                    font-size: 1.8rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .boxes {
+            margin-top: 3.25rem;
+            overflow: hidden;
+            .box {
+                overflow: hidden;
+                .box-content {
+                    background-color: rgba(249, 245, 241, 0.8);
+                    padding: 36px 36px 20px;
+                    max-width: 255px;
+                    height: 100%;
+                    .numbers {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        display: inline-block;
+                        font-family: 'Lora';
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                    .main-title {
+                        font-size: 20px;
+                        margin-bottom: 0;
+                        line-height: 1.5em;
+                        letter-spacing: 0.1em;
+                        margin-top: 2rem;
+                        margin-bottom: 18px;
+                        color: $mainTitleColor;
+                        font-family: 'Inter';
+                        font-weight: 500;
+                        @media screen and (max-width: $xs) {
+                            font-size: 20px!important;
+                        }
+                    }
+                    .box-description {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        color: $mainTitleColor;
+                    }
+                    @media screen and (max-width: $xs){
+                        height: auto;
+                        padding: 36px 12px 25px;
+                    }
+                    @media screen and (max-width: $md) and (min-width:$xs) {
+                        height: auto;
+                        padding: 36px 36px 25px;
+                    }
+                }
+            }
+            &._4box {
+                .box {
+                    overflow: hidden;
+                    &:last-child {
+                        @media screen and (max-width: $md) {
+                            width: 100%;
+                            max-width: 100%;
+                            flex: 100%;
+                        }
+                        .box-content{
+                            @media screen and (max-width: $md) {
+                                width: 100%;
+                                max-width: 100%;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                    @media screen and (max-width: $xs) {
+                        width: 100%;
+                        max-width: 100%;
+                        flex: 100%;
+                    }
+                    .box-content{
+                        @media screen and (max-width: $xs) {
+                            width: 100%;
+                            max-width: 100%;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+            &._3box {
+                .box {
+                    overflow: hidden;
+                    &:last-child {
+                        @media screen and (max-width: $md) and (min-width: $xs) {
+                            width: 100%;
+                            max-width: 100%;
+                            flex: 100%;
+                        }
+                        .box-content{
+                            @media screen and (max-width: $md) and (min-width: $xs) {
+                                width: 100%;
+                                max-width: 100%;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            &._2box {
+                .box {
+                    overflow: hidden;
+                    &:last-child {
+                        @media screen and (max-width: $md) and (min-width: $xs) {
+                            width: 100%;
+                            max-width: 100%;
+                            flex: 100%;
+                        }
+                        .box-content{
+                            @media screen and (max-width: $md) and (min-width: $xs) {
+                                width: 100%;
+                                max-width: 100%;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            &._1box {
+                .box {
+                    overflow: hidden;
+                    &:last-child {
+                        @media screen and (max-width: $md) and (min-width: $xs) {
+                            width: 100%;
+                            max-width: 100%;
+                            flex: 100%;
+                        }
+                        .box-content{
+                            @media screen and (max-width: $md) and (min-width: $xs) {
+                                width: 100%;
+                                max-width: 100%;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-button{
+            a{
+                border: 1px solid transparent;
+                &:hover{
+                    color: #fff!important;
+                    background-color: transparent!important;
+                    border: 1px solid $MainHover;
+                }
+            }
+        }
+        @media screen and (max-width: $sm) {
+            padding: 1rem 2.25rem 3rem;
+        }
+        @media screen and (max-width: $md) and (min-width:$sm) {
+            padding: 1rem 2.25rem 3rem;
+        }
+        @media screen and (max-width: $lg) and (min-width:$md) {
+            /*min-height: 100vh;*/
+            padding: 0 15px;
+        }
+        @media screen and (min-width:$xl) {
+            padding: 0 0 0;
+        }
+    }
+    @media screen and (max-width: $sm) {
+        padding: 0 0 6rem;
+    }
+    @media screen and (max-width: $md) and (min-width:$sm) {
+        padding: 0;
+    }
+    @media screen and (max-width: $lg) and (min-width:$md) {
+        /*min-height: 100vh;*/
+    }
+}

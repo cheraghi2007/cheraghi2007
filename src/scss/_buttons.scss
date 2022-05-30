@@ -1,0 +1,55 @@
+.buttons{
+    .button{
+        font-size: 18px;
+        padding: 19px 47px;
+        background-color: #3f0a0c;
+        color: #fff;
+        letter-spacing: 0.1em;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out;
+        font-weight: 600;
+        /*max-width: 228px;*/
+        width: 100%;
+        &:hover{
+            background-color: transparent;
+            color: #cb1b13;
+        }
+        @media screen and (max-width:$sm) {
+            transform: scale(0.8);
+            margin-bottom: 36px;
+            max-width: 240px;
+        }
+    }
+}
+
+#container-block_62334a0b03833{
+    .wp-block-spacer{
+        @media screen and (max-width:$sm) {
+            height: 0!important;
+        }
+    }
+}
+
+#buttons-block_625435eb54a1c{
+    a{
+        width: 283px;
+        height: 43px;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: Lora;
+        white-space: nowrap;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: transparent;
+            border-color: #3f0a0c !important;
+            color: #3f0a0c !important;
+            border: 1px solid red
+        }
+    }
+}

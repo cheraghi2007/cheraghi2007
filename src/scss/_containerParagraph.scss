@@ -1,0 +1,66 @@
+.containerParagraph {
+    .wrapper {
+        h1 {
+            margin: 0 0 18px;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 18px 0;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.75;
+            font-weight: 400;
+            font-family: 'Roboto';
+            color: #777;
+        }
+        a {
+            color: $buttonBg;
+        }
+        @media screen and (max-width:$sm) {
+            padding: 0;
+        }
+    }
+}
+
+.wp-block-table {
+    padding: 36px 0 72px;
+    table {
+        empty-cells: show;
+        border: 1px solid #eaeaea;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-weight: 600;
+        thead {
+            tr {
+                th {
+                    padding: 15px;
+                    border: 1px solid #ccc;
+                    line-height: 1.1;
+                    color: $buttonBg;
+                    background-color: #f9f5f1;
+                    letter-spacing: 1px;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    background-color: transparent;
+                    border-left: 1px solid #eaeaea;
+                    border-bottom: 1px solid #eaeaea;
+                    overflow: visible;
+                    padding: 8px 18px 7px 18px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:$lg) and (min-width:$sm) {
+        padding: 36px 36px 72px;
+    }
+}

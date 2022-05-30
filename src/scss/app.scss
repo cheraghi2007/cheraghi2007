@@ -1,0 +1,38 @@
+@import "./scss/bootstrap.scss";
+@import "variables";
+@import "classes";
+@import "header";
+@import "video";
+@import "whyAgapiBoat";
+@import "gallery";
+@import "clubGlance";
+@import "footer";
+@import "becomeClubMember";
+@import "smartfacts";
+@import "mainWrapper";
+@import "faq";
+@import "mainTitle";
+@import "containerParagraph";
+@import "boatCategory";
+@import "mainRow";
+@import "container";
+@import "boatsSingle";
+@import "ourLocation";
+@import "boatsRelation";
+@import "buttons";
+@import "search";
+@import "notfound";
+@import "category";
+@import "single";
+@import "gdpr";
+body {
+    direction: ltr;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Inter';
+    font-weight: 300;
+    color: $textColor;
+}
+.wow {
+    visibility: hidden;
+}

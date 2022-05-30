@@ -1,0 +1,151 @@
+.boatsRelation{
+    .boats-relation-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        .mixed {
+            max-width: 253px;
+            margin: 0 auto;
+            a {
+                h3 {
+                    font-weight: 600;
+                    font-family: 'Roboto';
+                    color: #000;
+                    font-size: 14px;
+                    margin: 30px 0 0.5rem;
+                    &:hover {
+                        color: $buttonBg;
+                    }
+                }
+                figure {
+                    overflow: hidden;
+                    position: relative;
+                    border: 1px solid #eaeaea;
+                    img {
+                        transition: 0.3s all ease-in-out;
+                        width: 100%;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: #000;
+                        opacity: 0;
+                        transition: 0.3s all ease-in-out;
+                    }
+                    &:hover {
+                        img {
+                            transform: scale(1.05);
+                            transition: 0.3s all ease-in-out;
+                        }
+                        &:after {
+                            opacity: 0.5;
+                            transition: 0.3s all ease-in-out;
+                        }
+                    }
+                }
+            }
+            p {
+                margin: 0 0 0;
+                font-size: 15px;
+                font-weight: 400;
+                font-family: 'Roboto';
+            }
+        }
+        @media screen and (max-width:$xs) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @media screen and (max-width:$md) and(min-width:$xs) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &.secondary-buttons{
+        .gray-button{
+            a{
+                background-color: #e6e7e8;
+                border-color: #f9f5f1!important;
+                color: #3f0a0c;
+                padding: 0.72rem 1.88rem;
+                font-size: 12px;
+                &:hover{
+                    background-color: transparent!important;
+                    border-color: #cb1b13!important;
+                    color: #cb1b13 ;
+                }
+            }       
+        }
+    }
+}
+
+.get-in-touch{
+    figure {
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #eaeaea;
+        cursor: pointer;
+        img {
+            transition: 0.3s all ease-in-out;
+            width: 100%;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #000;
+            opacity: 0;
+            transition: 0.3s all ease-in-out;
+        }
+        &:hover {
+            img {
+                transform: scale(1.05);
+                transition: 0.3s all ease-in-out;
+            }
+            &:after {
+                opacity: 0.5;
+                transition: 0.3s all ease-in-out;
+            }
+        }
+    }
+
+}
+
+.hover-img{
+    figure {
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #eaeaea;
+        cursor: pointer;
+        img {
+            transition: 0.3s all ease-in-out;
+            width: 100%;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #000;
+            opacity: 0;
+            transition: 0.3s all ease-in-out;
+        }
+        &:hover {
+            img {
+                transform: scale(1.05);
+                transition: 0.3s all ease-in-out;
+            }
+            &:after {
+                opacity: 0.5;
+                transition: 0.3s all ease-in-out;
+            }
+        }
+    }
+
+}

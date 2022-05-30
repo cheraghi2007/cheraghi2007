@@ -1,0 +1,56 @@
+.why-Agapi-Boat-Club {
+    .why-wrapper {
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            .box {
+                .box-content {
+                    .main-title-why {
+                        line-height: 1.875rem;
+                        font-size: 20px;
+                        margin-bottom: 0.938rem;
+                        margin-top: 1.688rem;
+                        letter-spacing: 0.07em;
+                        font-family: 'Inter';
+                        color: $mainTitleColor;
+                        font-weight: 700;
+                        @media screen and (max-width: $sm) {
+                            margin-bottom: 1.688rem;
+                        }
+                    }
+                }
+                .box-description {
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+            @media screen and (max-width: $sm) {
+                padding: 0;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2.25rem;
+            }
+        }
+        .main-button {
+            margin-top: 5rem;
+            a {
+                border: 1px solid transparent;
+                &:hover {
+                    border: 1px solid #cb1b13;
+                }
+            }
+        }
+    }
+}
+
+#why-Agapi-Boat-Club-block_6225ff19b80cf {
+    @media screen and (max-width: $md) {
+        padding: 6.75rem 0!important;
+    }
+    .main-title-why {
+        @media screen and (max-width: $md) {
+            margin-bottom: 66px;
+        }
+    }
+}
